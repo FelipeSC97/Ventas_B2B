@@ -1,0 +1,5 @@
+version,model_name,rmse_train,mae_train,r2_train,rmse_test,mae_test,r2_test
+Regresión OLS,RegressionResultsWrapper,21230.33,15806.68,0.42,22236.82,14988.69,0.27
+Regresión OLS_Log,RegressionResultsWrapper,23275.31,15265.18,0.31,34403.44,25096.46,-0.74
+RLM,RLM,21373.45,15363.0,0.41,22839.88,15387.59,0.23
+RLM_Log,RLM,22141.72,14721.3,0.37,29015.48,20172.02,-0.24

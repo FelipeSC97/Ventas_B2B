@@ -1,0 +1,3 @@
+version,model_name,rmse_train,mae_train,r2_train,rmse_test,mae_test,r2_test
+Random Forest,RandomForestRegressor,12982.65,9312.88,0.78,18095.0,12965.15,0.52
+Random Forest Log,RandomForestRegressor,12031.71599534465,6681.630514850753,0.8145553190493142,20360.28767468741,13557.833086667857,0.39105487027627606
