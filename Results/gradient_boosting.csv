@@ -1,0 +1,3 @@
+version,model_name,rmse_train,mae_train,r2_train,rmse_test,mae_test,r2_test
+Gradient Boosting,GradientBoostingRegressor,15179.76,11154.27,0.7,17795.4,12744.61,0.53
+Gradient Boosting Log,GradientBoostingRegressor,17926.740820545634,11108.039511582469,0.5883179642969272,18735.859756599584,12775.631098809408,0.48434694470366013
