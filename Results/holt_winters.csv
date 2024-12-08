@@ -1,0 +1,3 @@
+version,model_name,rmse_train,mae_train,r2_train,rmse_test,mae_test,r2_test
+Holt-Winters,HoltWintersResultsWrapper,21875.94,16132.76,0.39,34673.32,25706.72,-0.77
+Holt-Winters Log,HoltWintersResultsWrapper,26988.450574628692,17946.32340906008,0.06692803383472201,39001.467112389306,29369.894546803556,-1.2344581743573149
