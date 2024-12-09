@@ -12,14 +12,16 @@ for file in os.listdir(folder_path):
         dataframes.append(df)
 
 concatenated_df = pd.concat(dataframes, ignore_index=True)
-concatenated_df['model_type'] = concatenated_df['model_name'].apply(
-    lambda x: "Machine Learning" if x in ["RandomForestRegressor", "XGBRegressor"] else "Estadístico Tradicional"
+concatenated_df['Tipo de Modelo'] = concatenated_df['model_name'].apply(
+    lambda x: "Machine Learning" if x in ["RandomForestRegressor", "XGBRegressor","GradientBoostingRegressor"] else "Estadístico Tradicional"
 )
-concatenated_df = concatenated_df.sort_values(by='model_type', key=lambda x: x.map({
+concatenated_df = concatenated_df.sort_values(by='Tipo de Modelo', key=lambda x: x.map({
     "Estadístico Tradicional": 0,
     "Machine Learning": 1
 }))
-columns_order = ['model_type'] + [col for col in concatenated_df.columns if col != 'model_type']
+concatenated_df = concatenated_df.drop(columns=['model_name'])
+concatenated_df = concatenated_df.rename(columns={'version': 'Modelo'})
+columns_order = ['Tipo de Modelo'] + [col for col in concatenated_df.columns if col != 'Tipo de Modelo']
 concatenated_df = concatenated_df[columns_order]
 
 # Generar nuevo archivo
